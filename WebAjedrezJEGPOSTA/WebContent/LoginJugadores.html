@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function validaLogin(){
+	var form=document.getElementById("formLoginJugadores");
+	form.action="ServletLoginJugadores";
+	form.submit();
+}
+</script>
+</head>
+<body>
+<h1 style="position: absolute; top:5%; left:50%; transform: tranlate(-50%,-50%); font-size: 700%">LOGIN</h1>
+<form action="" method="POST" id="formLoginJugadores" style="text-align: center" >
+<table style="position: absolute; top: 50%; left: 15%; transform: translate(-50%,-50%); font-size: 200%">
+<tr>
+<td ><p style="font-color:red">DNI 1: </p></td>
+<td><input type="text" name="dni1" id="dni1"></td>
+</tr>
+<tr>
+<td><p>DNI 2:</p></td>
+<td><input type="text" name="dni2" id="dni2"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="button" value="Aceptar" style="font:80% arial" onclick="validaLogin()"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

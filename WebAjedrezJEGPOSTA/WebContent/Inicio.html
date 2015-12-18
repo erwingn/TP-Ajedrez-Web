@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>***Ajedrez***</title>
+<script type="text/javascript">
+function NuevaPartida(){
+	
+	var form=document.getElementById("formInicio");
+	form.action="ServletNuevaPartida";
+	form.submit();
+	
+}
+
+function ContinuarPartida(){
+	var form=document.getElementById("formInicio");
+	form.action="ServletContinuarPartida";
+	form.submit();
+}
+
+</script>
+
+</head>
+<body background="Imagenes/AjedrezPantalla.bmp">
+
+<form action="" method="POST" id="formInicio" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+
+<table style="text-align: Center;">
+
+<tr>
+<td colspan="2"><h1 style="font: 200% arial; color:white ;font-weight: bold;">Ajedrez</h1> </td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td><input type="button" value="NuevaPartida" onclick="NuevaPartida()" style="font: 100% arial"> </td>
+<td><input type="button" value="ContinuarPartida" onclick="ContinuarPartida()" style="font: 100% arial"> </td>
+
+</tr>
+
+
+</table>
+
+
+</form>
+
+</body>
+</html>
